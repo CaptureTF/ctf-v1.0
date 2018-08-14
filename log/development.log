@@ -1,0 +1,245 @@
+Started GET "/" for 127.0.0.1 at 2018-08-14 15:00:17 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (15.7ms)
+Completed 200 OK in 562ms (Views: 41.0ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (108.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (124.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateQuestions (20180814093658)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "Question_ID" varchar, "Problem_Name" varchar, "Max_Points" varchar, "Submissions" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180814093658"]]
+  [1m[35m (86.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-08-14 09:37:09.102939"], ["updated_at", "2018-08-14 09:37:09.102939"]]
+  [1m[35m (82.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-08-14 15:07:24 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (17.9ms)
+Completed 200 OK in 86ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-08-14 15:07:28 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2243ms (Views: 2237.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2018-08-14 15:07:37 +0530
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (234.0ms)
+  Rendered questions/new.html.erb within layouts/application (241.4ms)
+Completed 200 OK in 391ms (Views: 315.9ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2018-08-14 15:08:23 +0530
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VU/YrD9T84GSWwxW2I4+VV49X0d1uAOBp7tdIFjeY9WfiBKZaWlzdh5gMscjoc9vaoK+UPsl/EuR4N1KKFq2ZQ==", "question"=>{"Question_ID"=>"FINDTF", "Problem_Name"=>"Find the flag", "Max_Points"=>"300", "Submissions"=>"0"}, "commit"=>"Create Question"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("Question_ID", "Problem_Name", "Max_Points", "Submissions", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["Question_ID", "FINDTF"], ["Problem_Name", "Find the flag"], ["Max_Points", "300"], ["Submissions", "0"], ["created_at", "2018-08-14 09:38:23.748471"], ["updated_at", "2018-08-14 09:38:23.748471"]]
+  [1m[35m (80.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/questions/1
+Completed 302 Found in 94ms (ActiveRecord: 81.2ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-08-14 15:08:23 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 74ms (Views: 47.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-08-14 15:08:26 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 75ms (Views: 70.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-08-14 15:08:29 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 143ms (Views: 129.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2018-08-14 15:08:46 +0530
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (28.4ms)
+  Rendered questions/new.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 146ms (Views: 136.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2018-08-14 15:08:59 +0530
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cgCwGcQbuZpt8Gm7EY1nTOnqC011tlbnI9Ipp69N8O24x3oskiE5beHLVyrqopZ23VXqWvsrqS0VianN38klXQ==", "question"=>{"Question_ID"=>"QWERT", "Problem_Name"=>"Solve this", "Max_Points"=>"200", "Submissions"=>"0"}, "commit"=>"Create Question"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "questions" ("Question_ID", "Problem_Name", "Max_Points", "Submissions", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["Question_ID", "QWERT"], ["Problem_Name", "Solve this"], ["Max_Points", "200"], ["Submissions", "0"], ["created_at", "2018-08-14 09:38:59.582273"], ["updated_at", "2018-08-14 09:38:59.582273"]]
+  [1m[35m (249.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/questions/2
+Completed 302 Found in 260ms (ActiveRecord: 251.3ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2018-08-14 15:08:59 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 101ms (Views: 91.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-08-14 15:09:02 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 70ms (Views: 65.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2018-08-14 15:09:04 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 131ms (Views: 122.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-08-14 15:09:06 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (1.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 85ms (Views: 55.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-14 15:11:48 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (7.5ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-14 15:22:38 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/questions" for 127.0.0.1 at 2018-08-14 15:22:39 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (52.4ms)
+Completed 200 OK in 644ms (Views: 598.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2018-08-14 15:22:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/ideas"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/questions" for 127.0.0.1 at 2018-08-14 15:22:46 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 107ms (Views: 86.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-08-14 15:22:46 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pages/info" for 127.0.0.1 at 2018-08-14 15:22:53 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/pages/info"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/questions" for 127.0.0.1 at 2018-08-14 15:22:55 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 122ms (Views: 105.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2018-08-14 15:24:25 +0530
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (125.0ms)
+  Rendered questions/new.html.erb within layouts/application (128.7ms)
+Completed 200 OK in 260ms (Views: 237.0ms | ActiveRecord: 0.0ms)
+
+

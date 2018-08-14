@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Question_ID: MyString
+  Problem_Name: MyString
+  Max_Points: MyString
+  Submissions: MyString
+
+two:
+  Question_ID: MyString
+  Problem_Name: MyString
+  Max_Points: MyString
+  Submissions: MyString

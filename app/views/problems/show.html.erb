@@ -11,11 +11,6 @@
 </p>
 
 <p>
-  <strong>Flag:</strong>
-  <%= @problem.flag %>
-</p>
-
-<p>
   <strong>Supp file:</strong>
   <%= @problem.supp_file %>
 </p>
@@ -40,10 +35,6 @@
   <%= @problem.total_submissions %>
 </p>
 
-<p>
-  <strong>Dirty bit:</strong>
-  <%= @problem.dirty_bit %>
-</p>
 
 <%= link_to 'Edit', edit_problem_path(@problem) %> |
 <%= link_to 'Back', problems_path %>

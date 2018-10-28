@@ -2,19 +2,17 @@
 
 <h1>Problems</h1>
 
-<table>
+<table cellpadding="10">
   <thead>
     <tr>
       <th>Problem</th>
-      <th>Problem statement</th>
-      <th>Flag</th>
-      <th>Supp file</th>
-      <th>Upvote downvote</th>
+      <th>Problem statement</th>      
+      <th>Votes</th>
       <th>Max points</th>
       <th>Successful submissions</th>
       <th>Total submissions</th>
-      <th>Dirty bit</th>
-      <th colspan="3"></th>
+      
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -23,13 +21,11 @@
       <tr>
         <td><%= problem.problem_id %></td>
         <td><%= problem.problem_statement %></td>
-        <td><%= problem.flag %></td>
-        <td><%= problem.supp_file %></td>
         <td><%= problem.upvote_downvote %></td>
         <td><%= problem.max_points %></td>
         <td><%= problem.successful_submissions %></td>
         <td><%= problem.total_submissions %></td>
-        <td><%= problem.dirty_bit %></td>
+       
         <td><%= link_to 'Show', problem %></td>
         <td><%= link_to 'Edit', edit_problem_path(problem) %></td>
         <td><%= link_to 'Destroy', problem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -40,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Problem', new_problem_path %>
+<%= link_to 'Add a New Problem', new_problem_path %>

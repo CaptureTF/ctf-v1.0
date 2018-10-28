@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @problem.problem_id %>
+</p>
+
+<p>
+  <strong>Problem statement:</strong>
+  <%= @problem.problem_statement %>
+</p>
+
+<p>
+  <strong>Flag:</strong>
+  <%= @problem.flag %>
+</p>
+
+<p>
+  <strong>Supp file:</strong>
+  <%= @problem.supp_file %>
+</p>
+
+<p>
+  <strong>Upvote downvote:</strong>
+  <%= @problem.upvote_downvote %>
+</p>
+
+<p>
+  <strong>Max points:</strong>
+  <%= @problem.max_points %>
+</p>
+
+<p>
+  <strong>Successful submissions:</strong>
+  <%= @problem.successful_submissions %>
+</p>
+
+<p>
+  <strong>Total submissions:</strong>
+  <%= @problem.total_submissions %>
+</p>
+
+<p>
+  <strong>Dirty bit:</strong>
+  <%= @problem.dirty_bit %>
+</p>
+
+<%= link_to 'Edit', edit_problem_path(@problem) %> |
+<%= link_to 'Back', problems_path %>

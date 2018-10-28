@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :problems
   get 'sessions/new'
 
   get 'welcome/index'
@@ -12,8 +13,8 @@ Rails.application.routes.draw do
   post '/login',            to: 'sessions#create'
   delete '/logout',         to: 'sessions#destroy'
   resources :users
-  get '/questions',         to: 'questions#index'
-  get '/questions',         to: 'questions#new'
+  get '/problems',         to: 'problems#index'
+  get '/problems',         to: 'problems#new'
            
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

@@ -1,0 +1,62 @@
+<%= form_with(model: problem, local: true) do |form| %>
+  <% if problem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(problem.errors.count, "error") %> prohibited this problem from being saved:</h2>
+
+      <ul>
+      <% problem.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :problem_id %>
+    <%= form.number_field :problem_id, id: :problem_problem_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :problem_statement %>
+    <%= form.text_area :problem_statement, id: :problem_problem_statement %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flag %>
+    <%= form.text_area :flag, id: :problem_flag %>
+  </div>
+
+  <div class="field">
+    <%= form.label :supp_file %>
+    <%= form.text_area :supp_file, id: :problem_supp_file %>
+  </div>
+
+  <div class="field">
+    <%= form.label :upvote_downvote %>
+    <%= form.number_field :upvote_downvote, id: :problem_upvote_downvote %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max_points %>
+    <%= form.number_field :max_points, id: :problem_max_points %>
+  </div>
+
+  <div class="field">
+    <%= form.label :successful_submissions %>
+    <%= form.number_field :successful_submissions, id: :problem_successful_submissions %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_submissions %>
+    <%= form.number_field :total_submissions, id: :problem_total_submissions %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dirty_bit %>
+    <%= form.check_box :dirty_bit, id: :problem_dirty_bit %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

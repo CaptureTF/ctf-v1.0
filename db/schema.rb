@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181021105953) do
+ActiveRecord::Schema.define(version: 20181028151737) do
+
+  create_table "problems", force: :cascade do |t|
+    t.integer "problem_id"
+    t.text "problem_statement"
+    t.text "flag"
+    t.text "supp_file"
+    t.integer "upvote_downvote"
+    t.integer "max_points"
+    t.integer "successful_submissions"
+    t.integer "total_submissions"
+    t.boolean "dirty_bit"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "questions", force: :cascade do |t|
     t.string "Question_ID"

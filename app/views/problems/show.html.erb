@@ -35,6 +35,11 @@
   <%= @problem.total_submissions %>
 </p>
 
-
-<%= link_to 'Edit', edit_problem_path(@problem) %> |
-<%= link_to 'Back', problems_path %>
+<p>
+  <strong>Enter your flag:</strong>
+  <%= @problem.total_submissions %>
+</p>
+<%= form_for(:ad, :url => {:action => 'create'}) do |f| %>
+  <%= f.text_area(:text, size: '50x10') %>
+  <%= submit_tag("Submit") %>
+<% end %>

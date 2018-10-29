@@ -557,3 +557,228 @@ Processing by ProblemsController#new as HTML
 Completed 200 OK in 249ms (Views: 240.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-29 08:47:17 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 249ms (Views: 241.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/what_is_a_ctf" for 127.0.0.1 at 2018-10-29 08:47:21 +0530
+Processing by WelcomeController#what_is_a_ctf as HTML
+  Rendering welcome/what_is_a_ctf.html.erb within layouts/application
+  Rendered welcome/what_is_a_ctf.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2018-10-29 08:47:22 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (0.3ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 83ms (Views: 72.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-10-29 08:47:23 +0530
+Processing by WelcomeController#about as HTML
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2018-10-29 08:47:29 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (0.5ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (3.9ms)
+Started GET "/problems" for 127.0.0.1 at 2018-10-29 08:47:30 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (0.3ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.5ms)
+
+
+  Rendered problems/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 75ms (Views: 71.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-10-29 08:47:32 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (49.2ms)
+Completed 200 OK in 105ms (Views: 96.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-10-29 08:47:51 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (1.5ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 100ms (Views: 88.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/problems" for 127.0.0.1 at 2018-10-29 08:48:00 +0530
+Processing by ProblemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RdZzz0EDSdZvzBHUz37Kgyzpcdt+BLGSA/LN/IAkDuHjet824apc9ldWAa2ay/PIi5ChisK8+k+H0hy61nS+zw==", "ad"=>{"text"=>""}, "commit"=>"Submit"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: problem):
+  
+app/controllers/problems_controller.rb:72:in `problem_params'
+app/controllers/problems_controller.rb:27:in `create'
+Started GET "/problems/1" for 127.0.0.1 at 2018-10-29 08:48:47 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.6ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 99ms (Views: 90.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/problems" for 127.0.0.1 at 2018-10-29 09:23:12 +0530
+Processing by ProblemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R0vo2OgtsrrKdcVvu85hr6AybSwIqK6hmhXsdVWCPSXh50QhSISnmvLv1Rbue1jkB0u9fbQQ5XweNT0zA9KNCw==", "ad"=>{"text"=>""}, "commit"=>"Submit"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: problem):
+  
+app/controllers/problems_controller.rb:72:in `problem_params'
+app/controllers/problems_controller.rb:27:in `create'
+Started GET "/problems/1" for 127.0.0.1 at 2018-10-29 09:25:25 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/aditi/ctf-v1.0/app/views/problems/show.html.erb:44: syntax error, unexpected tLABEL
+...it = "Submit my answer", class: "btn btn-primary" );@output_...
+...                         ^~~~~~):
+  
+app/views/problems/show.html.erb:44: syntax error, unexpected tLABEL
+Started GET "/problems" for 127.0.0.1 at 2018-10-29 09:25:32 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (0.3ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-10-29 09:25:46 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/aditi/ctf-v1.0/app/views/problems/show.html.erb:44: syntax error, unexpected tLABEL
+...it = "Submit my answer", class: "btn btn-primary" );@output_...
+...                         ^~~~~~):
+  
+app/views/problems/show.html.erb:44: syntax error, unexpected tLABEL
+Started GET "/problems" for 127.0.0.1 at 2018-10-29 09:25:49 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2018-10-29 09:31:40 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-10-29 09:31:43 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    39:   <strong>Enter your flag here:</strong>
+    40: </p>
+    41: 
+    42: <%= form_for(@answer) do |f| %>
+    43:   <div class = "form-group">
+    44:   <%= f.label :your_flag %>
+    45:   <%= f.text_field :your_flag, class: "form-control"%>
+  
+app/views/problems/show.html.erb:42:in `_app_views_problems_show_html_erb__2958693453866095317_38819520'
+Started GET "/problems/1" for 127.0.0.1 at 2018-10-29 09:32:01 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    39:   <strong>Enter your flag here:</strong>
+    40: </p>
+    41: 
+    42: <%= form_for(@problem_id) do |f| %>
+    43:   <div class = "form-group">
+    44:   <%= f.label :your_flag %>
+    45:   <%= f.text_field :your_flag, class: "form-control"%>
+  
+app/views/problems/show.html.erb:42:in `_app_views_problems_show_html_erb__2958693453866095317_70007641044400'
+Started GET "/problems/1" for 127.0.0.1 at 2018-10-29 09:32:46 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/problems" for 127.0.0.1 at 2018-10-29 09:32:53 +0530
+Processing by ProblemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A6op1glMgfrjmV0B7s6LJfPw7oDzUUpjwNGn95X7276lBoUvqeWU2tsDTXi7e7JuVIk+0U/pAb5E8Xaxw6trkA==", "ad"=>{"text"=>""}, "commit"=>"Submit"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: problem):
+  
+app/controllers/problems_controller.rb:72:in `problem_params'
+app/controllers/problems_controller.rb:27:in `create'
+Started GET "/problems" for 127.0.0.1 at 2018-10-29 09:38:43 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (1.0ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 85ms (Views: 80.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2018-10-29 09:38:46 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+

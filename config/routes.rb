@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   delete '/logout',         to: 'sessions#destroy'
   resources :users
   get '/questions',         to: 'questions#index'
-  get '/questions',         to: 'questions#new'
+  get '/questions/new',     to: 'questions#new'
+  post '/questions',    to: 'questions#create'
            
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

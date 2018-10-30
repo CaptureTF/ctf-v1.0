@@ -20,14 +20,17 @@
         <td><%= question.Problem_Name %></td>
         <td><%= question.Max_Points %></td>
         <td><%= question.Submissions %></td>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
-        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <td><a href="/questions/show">Show</a></td>
+        <td><a href="/questions/edit">Edit</a></td>
+        <td><a href="/questions/destroy">Destroy</a></td>
+        
+        <%# <td><%= link_to 'Show', question_path %></td> %> 
+        <%# <td><%= link_to 'Edit', edit_question_path(question) %></td> %> 
+        <%# <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td> %> %>
+       
+       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Question', new_question_path %>

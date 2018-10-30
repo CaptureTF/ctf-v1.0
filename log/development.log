@@ -3637,3 +3637,838 @@ Did you mean?  new_user_path):
     33: <%= link_to 'New Question', new_question_path %>
   
 app/views/questions/index.html.erb:33:in `_app_views_questions_index_html_erb___2872054302872901234_70148913598640'
+Started GET "/" for 127.0.0.1 at 2018-10-23 14:31:53 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 146ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 14:31:56 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (225.1ms)
+Completed 500 Internal Server Error in 232ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_question_path' for #<#<Class:0x007f34840b5e68>:0x007f34840b41d0>
+Did you mean?  new_user_path):
+    30: 
+    31: <br>
+    32: 
+    33: <%= link_to 'New Question', new_question_path %>
+  
+app/views/questions/index.html.erb:33:in `_app_views_questions_index_html_erb__1805075638056076557_69931765183360'
+Started GET "/" for 127.0.0.1 at 2018-10-23 14:35:20 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-23 15:36:05 +0530
+  
+SyntaxError (/home/adwi/Thegoal/sem5/dbms_project/official/ctf-v1.0/config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  post '/questions/new'     to: 'questions#create'
+                              ^):
+  
+config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-10-23 15:36:56 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 19.8ms)
+
+
+Started GET "/what_is_a_ctf" for 127.0.0.1 at 2018-10-23 15:37:01 +0530
+Processing by WelcomeController#what_is_a_ctf as HTML
+  Rendering welcome/what_is_a_ctf.html.erb within layouts/application
+  Rendered welcome/what_is_a_ctf.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 29.5ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:37:03 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (200.7ms)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_question_path' for #<#<Class:0x007f3484267748>:0x007f3484265ab0>
+Did you mean?  new_user_path):
+    30: 
+    31: <br>
+    32: 
+    33: <%= link_to 'New Question', new_question_path %>
+  
+app/views/questions/index.html.erb:33:in `_app_views_questions_index_html_erb__1805075638056076557_69931766145060'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:38:45 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-23 15:38:50 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:38:52 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-23 15:41:21 +0530
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 28ms (Views: 26.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-10-23 15:41:30 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1sgJtBaBEx1wygCthfavX+BTrLu5B0yNKcslpAafWNhEhzKvXayuPrvnJKzcyPxhlfT++13ix1uc8WqUfmDK2A==", "session"=>{"email"=>"adwait.gautham@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "adwait.gautham@gmail.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 118ms (Views: 20.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-10-23 15:42:13 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yQU2sMl59saamazEf+nXH3CsZ+SrdOsQ9ekv8V8zGIYvZ3fyNb5bZN1gyBPgMOiEULtQ0EIEorx4R8pwnhIT/Q==", "session"=>{"email"=>"aadwagiwuwrg@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aadwagiwuwrg@gmail.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-10-23 15:42:30 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:47:08 +0530
+  
+SyntaxError (/home/adwi/Thegoal/sem5/dbms_project/official/ctf-v1.0/app/controllers/questions_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/questions_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:47:33 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:47:35 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2018-10-23 15:47:40 +0530
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (3.7ms)
+  Rendered questions/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 66ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2018-10-23 15:48:04 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/questions"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/questions/new" for 127.0.0.1 at 2018-10-23 15:48:42 +0530
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (2.7ms)
+  Rendered questions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 36ms (Views: 22.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2018-10-23 15:48:43 +0530
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (3.3ms)
+  Rendered questions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2018-10-23 15:48:52 +0530
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HMZ2/twbLPVpnU0Jjk6BQZsMtprWfkAr+WVhExIUG3D6pDe8INyBVy5kKd4Rl77auxuBrj8OCYd0y4SS0zUQCw==", "question"=>{"Question_ID"=>"CTF01123", "Problem_Name"=>"pwnme011", "Max_Points"=>"1000", "Submissions"=>"0"}, "commit"=>"Create Question"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("Question_ID", "Problem_Name", "Max_Points", "Submissions", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["Question_ID", "CTF01123"], ["Problem_Name", "pwnme011"], ["Max_Points", "1000"], ["Submissions", "0"], ["created_at", "2018-10-23 10:18:52.831063"], ["updated_at", "2018-10-23 10:18:52.831063"]]
+  [1m[35m (153.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 153.9ms)
+
+
+  
+NoMethodError (undefined method `question_url' for #<QuestionsController:0x007f3491677f60>
+Did you mean?  questions_url):
+  
+app/controllers/questions_controller.rb:32:in `block (2 levels) in create'
+app/controllers/questions_controller.rb:30:in `create'
+Started POST "/questions" for 127.0.0.1 at 2018-10-23 15:52:41 +0530
+  
+SyntaxError (/home/adwi/Thegoal/sem5/dbms_project/official/ctf-v1.0/app/controllers/questions_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/questions_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/questions" for 127.0.0.1 at 2018-10-23 15:52:55 +0530
+  
+SyntaxError (/home/adwi/Thegoal/sem5/dbms_project/official/ctf-v1.0/app/controllers/questions_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/questions_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2018-10-23 15:52:57 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 21.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:52:59 +0530
+  
+SyntaxError (/home/adwi/Thegoal/sem5/dbms_project/official/ctf-v1.0/app/controllers/questions_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/questions_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:54:25 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (119.0ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `question_path' for #<#<Class:0x007f3488037140>:0x007f3488035200>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         <td><%= link_to 'Show', question %></td>
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931798478060'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931798478060'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:55:46 +0530
+  
+SyntaxError (/home/adwi/Thegoal/sem5/dbms_project/official/ctf-v1.0/app/controllers/questions_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/questions_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:58:21 +0530
+  
+SyntaxError (/home/adwi/Thegoal/sem5/dbms_project/official/ctf-v1.0/app/controllers/questions_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/questions_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:58:42 +0530
+  
+SyntaxError (/home/adwi/Thegoal/sem5/dbms_project/official/ctf-v1.0/app/controllers/questions_controller.rb:73: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/questions_controller.rb:73: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/__web_console/repl_sessions/a60c9d7343e44a869970a8cbadce3463/trace" for 127.0.0.1 at 2018-10-23 15:58:46 +0530
+Started POST "/__web_console/repl_sessions/a60c9d7343e44a869970a8cbadce3463/trace" for 127.0.0.1 at 2018-10-23 15:58:47 +0530
+Started POST "/__web_console/repl_sessions/a60c9d7343e44a869970a8cbadce3463/trace" for 127.0.0.1 at 2018-10-23 15:58:47 +0530
+Started POST "/__web_console/repl_sessions/a60c9d7343e44a869970a8cbadce3463/trace" for 127.0.0.1 at 2018-10-23 15:58:48 +0530
+Started POST "/__web_console/repl_sessions/a60c9d7343e44a869970a8cbadce3463/trace" for 127.0.0.1 at 2018-10-23 15:58:48 +0530
+Started POST "/__web_console/repl_sessions/a60c9d7343e44a869970a8cbadce3463/trace" for 127.0.0.1 at 2018-10-23 15:58:48 +0530
+Started POST "/__web_console/repl_sessions/a60c9d7343e44a869970a8cbadce3463/trace" for 127.0.0.1 at 2018-10-23 15:58:48 +0530
+Started POST "/__web_console/repl_sessions/a60c9d7343e44a869970a8cbadce3463/trace" for 127.0.0.1 at 2018-10-23 15:58:48 +0530
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 15:59:16 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (153.5ms)
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `question_path' for #<#<Class:0x000000032ae510>:0x0000000326d998>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         <td><%= link_to 'Show', question %></td>
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_26649200'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_26649200'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:00:21 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (199.7ms)
+Completed 500 Internal Server Error in 205ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_question_path' for #<#<Class:0x000000032ae510>:0x007f348802a7d8>
+Did you mean?  edit_user_path):
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         <td><%= link_to 'Show', questions_path %></td>
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+    27:     <% end %>
+  
+app/views/questions/index.html.erb:24:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931798452580'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931798452580'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:00:34 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (272.0ms)
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question_path' for #<#<Class:0x000000032ae510>:0x007f3491651f68>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         <td><%= link_to 'Show', question_path %></td>
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931877178340'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931877178340'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:05:38 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (241.1ms)
+Completed 500 Internal Server Error in 245ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question_path' for #<#<Class:0x000000032ae510>:0x007f349152c700>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         <td><%= link_to 'Show', question_path %></td>
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931876577260'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931876577260'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:12:53 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (203.0ms)
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question_path' for #<#<Class:0x000000032ae510>:0x007f347d70fe28>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         <td><%= link_to 'Show', question_path %></td>
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931880311460'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931880311460'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:13:42 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (203.8ms)
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question_path' for #<#<Class:0x000000032ae510>:0x007f348534c018>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         # <td><%= link_to 'Show', question_path %></td>
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931774928120'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931774928120'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:13:59 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (139.7ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_question_path' for #<#<Class:0x000000032ae510>:0x007f3484667eb0>
+Did you mean?  edit_user_path):
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+    27:     <% end %>
+  
+app/views/questions/index.html.erb:24:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931768210580'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931768210580'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:14:27 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (291.9ms)
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question_path' for #<#<Class:0x000000032ae510>:0x007f3486493740>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         <td><%= link_to 'Show', question_path %></td>
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931780997260'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931780997260'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:14:28 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (204.0ms)
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question_path' for #<#<Class:0x000000032ae510>:0x007f3485adb6a8>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         # <td><%= link_to 'Show', question_path %></td>
+    24:         # <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         # <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931774959740'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931774959740'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:14:30 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (200.1ms)
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question_path' for #<#<Class:0x000000032ae510>:0x007f347c074588>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         # <td><%= link_to 'Show', question_path %></td>
+    24:         # <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         # <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931697940460'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931697940460'
+Started GET "/questions/new" for 127.0.0.1 at 2018-10-23 16:16:23 +0530
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (3.9ms)
+  Rendered questions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2018-10-23 16:16:33 +0530
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ljmta1EakmD34s/Hhkxz5u4V+JHqXrr8NZ8c6/8PuxdwW+wprd0/wrAbqxAZlUx9zgLPpQMu81C4MflqPi6wbA==", "question"=>{"Question_ID"=>"123", "Problem_Name"=>"123", "Max_Points"=>"13", "Submissions"=>"10"}, "commit"=>"Create Question"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("Question_ID", "Problem_Name", "Max_Points", "Submissions", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["Question_ID", "123"], ["Problem_Name", "123"], ["Max_Points", "13"], ["Submissions", "10"], ["created_at", "2018-10-23 10:46:33.641726"], ["updated_at", "2018-10-23 10:46:33.641726"]]
+  [1m[35m (128.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 251ms (ActiveRecord: 128.6ms)
+
+
+  
+NoMethodError (undefined method `question_url' for #<QuestionsController:0x007f34840b6fe8>
+Did you mean?  questions_url):
+  
+app/controllers/questions_controller.rb:32:in `block (2 levels) in create'
+app/controllers/questions_controller.rb:30:in `create'
+Started POST "/questions" for 127.0.0.1 at 2018-10-23 16:19:50 +0530
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ljmta1EakmD34s/Hhkxz5u4V+JHqXrr8NZ8c6/8PuxdwW+wprd0/wrAbqxAZlUx9zgLPpQMu81C4MflqPi6wbA==", "question"=>{"Question_ID"=>"123", "Problem_Name"=>"123", "Max_Points"=>"13", "Submissions"=>"10"}, "commit"=>"Create Question"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("Question_ID", "Problem_Name", "Max_Points", "Submissions", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["Question_ID", "123"], ["Problem_Name", "123"], ["Max_Points", "13"], ["Submissions", "10"], ["created_at", "2018-10-23 10:49:50.496067"], ["updated_at", "2018-10-23 10:49:50.496067"]]
+  [1m[35m (86.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 87.9ms)
+
+
+  
+NoMethodError (undefined method `question_url' for #<QuestionsController:0x007f3486582890>
+Did you mean?  questions_url):
+  
+app/controllers/questions_controller.rb:32:in `block (2 levels) in create'
+app/controllers/questions_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2018-10-23 16:20:27 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-23 16:20:37 +0530
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:20:38 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (196.6ms)
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question_path' for #<#<Class:0x007f3484670420>:0x007f3484666088>
+Did you mean?  questions_path):
+    20:         <td><%= question.Problem_Name %></td>
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         # <td><%= link_to 'Show', question_path %></td>
+    24:         # <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:         # <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    26:       </tr>
+  
+app/views/questions/index.html.erb:23:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931768186840'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931768186840'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:23:24 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:23:57 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (132.6ms)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_question_path' for #<#<Class:0x007f3484670420>:0x007f34864c5b00>
+Did you mean?  edit_user_path):
+    21:         <td><%= question.Max_Points %></td>
+    22:         <td><%= question.Submissions %></td>
+    23:         <%# <td><%= link_to 'Show', question_path %></td>
+    24:         <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    25:        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    26:        %>  
+    27:        </tr>
+  
+app/views/questions/index.html.erb:24:in `block in _app_views_questions_index_html_erb__1805075638056076557_69931784090400'
+app/views/questions/index.html.erb:17:in `_app_views_questions_index_html_erb__1805075638056076557_69931784090400'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:24:26 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:32:53 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/show" for 127.0.0.1 at 2018-10-23 16:32:57 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/questions/show"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:32:59 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/edit" for 127.0.0.1 at 2018-10-23 16:33:01 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/questions/edit"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:33:02 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/destroy" for 127.0.0.1 at 2018-10-23 16:33:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/questions/destroy"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/questions" for 127.0.0.1 at 2018-10-23 16:33:04 +0530
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/show" for 127.0.0.1 at 2018-10-23 16:34:08 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/questions/show"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-23 16:35:57 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2018-10-23 16:36:04 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 30.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2018-10-23 16:36:09 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-10-23 16:36:12 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-10-23 16:36:14 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/2" for 127.0.0.1 at 2018-10-23 16:36:17 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-23 16:36:19 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/6" for 127.0.0.1 at 2018-10-23 16:36:22 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.2ms)
+
+

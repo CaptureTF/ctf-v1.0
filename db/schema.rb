@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181028151737) do
+ActiveRecord::Schema.define(version: 20181104140509) do
 
   create_table "problems", force: :cascade do |t|
     t.integer "problem_id"
@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(version: 20181028151737) do
     t.string "password_digest"
     t.boolean "email_confirmed"
     t.string "confirm_token"
+    t.string "remember_digest"
+    t.integer "ratings"
   end
 
 end

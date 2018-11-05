@@ -10,6 +10,7 @@ class ProblemsController < ApplicationController
   # GET /problems/1
   # GET /problems/1.json
   def show
+    @problem1 = Problem.new
   end
 
   # GET /problems/new
@@ -61,6 +62,21 @@ class ProblemsController < ApplicationController
     end
   end
 
+  def submit 
+    
+    @correct_problem = Problem.find(params[:id])
+    @correct_problem.total_submissions = @correct_problem.total_submissions + 1
+    
+
+    if @correct_problem.flag == params[:problem][:flag]
+      redirect_to problem_url, notice: 'Flag is correct!'
+      @correct_problem.successful_submissions = @correct_problem.successful_submissions + 1
+    else 
+      redirect_to problem_url, notice: 'Flag is incorrect!'
+    end
+
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_problem
@@ -71,4 +87,8 @@ class ProblemsController < ApplicationController
     def problem_params
       params.require(:problem).permit(:problem_id, :problem_statement, :flag, :supp_file, :upvote_downvote, :max_points, :successful_submissions, :total_submissions, :dirty_bit)
     end
+
+    
+
+
 end

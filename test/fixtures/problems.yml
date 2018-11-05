@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  problem_id: 1
+  problem_statement: MyText
+  flag: MyText
+  supp_file: MyText
+  upvote_downvote: 1
+  max_points: 1
+  successful_submissions: 1
+  total_submissions: 1
+  dirty_bit: false
+
+two:
+  problem_id: 1
+  problem_statement: MyText
+  flag: MyText
+  supp_file: MyText
+  upvote_downvote: 1
+  max_points: 1
+  successful_submissions: 1
+  total_submissions: 1
+  dirty_bit: false

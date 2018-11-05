@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Problems</h1>
+
+<table cellpadding="10">
+  <thead>
+    <tr>
+      <th>Problem</th>
+      <th>Problem statement</th>      
+      <th>Votes</th>
+      <th>Max points</th>
+      <th>Successful submissions</th>
+      <th>Total submissions</th>
+      
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @problems.each do |problem| %>
+      <tr>
+        <td><%= problem.problem_id %></td>
+        <td><%= problem.problem_statement %></td>
+        <td><%= problem.upvote_downvote %></td>
+        <td><%= problem.max_points %></td>
+        <td><%= problem.successful_submissions %></td>
+        <td><%= problem.total_submissions %></td>
+       
+        <td><%= link_to 'Show', problem %></td>
+        <td><%= link_to 'Edit', edit_problem_path(problem) %></td>
+        <td><%= link_to 'Destroy', problem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Add a New Problem', new_problem_path %>

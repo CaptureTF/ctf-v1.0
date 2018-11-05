@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       #Handle a successful save
+      log_in @user
       UserMailer.welcome_email(@user).deliver_now
       flash[:success] = "Sign up Successful! Welcome to CaptureTF!"
       redirect_to @user

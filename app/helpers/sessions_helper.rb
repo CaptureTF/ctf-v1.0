@@ -1,11 +1,7 @@
 module SessionsHelper
 
     def log_in(user)
-<<<<<<< HEAD
         session[:user] = user
-=======
-        session[:user_id] = user.id
->>>>>>> basic-login
     end
 
     def current_user

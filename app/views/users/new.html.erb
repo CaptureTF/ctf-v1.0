@@ -4,7 +4,6 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@user, url: signup_path) do |f| %>
-        #Should do error handling here. If someone submits a malformed form, we have to catch it!
         
       <%= f.label :name %>
       <%= f.text_field :name, class: 'form-control' %>

@@ -37,7 +37,6 @@
 
 <p>
   <strong>Enter your flag:</strong>
-  <%= @problem.total_submissions %>
 </p>
 <%= form_for @problem1, :url => { :action => "submit"} do |f| %>
   <%= f.text_area(:flag, size: '50x10') %>

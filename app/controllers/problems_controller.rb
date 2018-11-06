@@ -65,12 +65,13 @@ class ProblemsController < ApplicationController
   def submit 
     
     @correct_problem = Problem.find(params[:id])
-    @correct_problem.total_submissions = @correct_problem.total_submissions + 1
-    
+    x = @correct_problem.total_submissions + 1
+    @correct_problem.update(total_submissions: x)
 
     if @correct_problem.flag == params[:problem][:flag]
       redirect_to problem_url, notice: 'Flag is correct!'
-      @correct_problem.successful_submissions = @correct_problem.successful_submissions + 1
+      y = @correct_problem.successful_submissions + 1
+      @correct_problem.update(successful_submissions: y)
     else 
       redirect_to problem_url, notice: 'Flag is incorrect!'
     end

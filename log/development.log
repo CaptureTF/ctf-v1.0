@@ -5073,3 +5073,196 @@ Processing by ProblemsController#show as HTML
 Completed 200 OK in 47ms (Views: 42.2ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-05 23:11:15 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 141ms (Views: 134.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-05 23:11:18 +0530
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2018-11-05 23:11:19 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 54ms (Views: 49.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-11-05 23:11:22 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 44ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/problems/submit/1" for 127.0.0.1 at 2018-11-05 23:11:27 +0530
+Processing by ProblemsController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S9VIS/u7P7wZ816zEs75T6GQmuk4XatY5y7zbliOABjw6zWHDzPfDZICVwPGOhgq2+cdMoV06pNGumnedwyTlw==", "problem"=>{"flag"=>"qwerty1234"}, "commit"=>"Submit Flag", "id"=>"1"}
+  [1m[36mProblem Load (0.3ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/problems/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-11-05 23:11:27 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/problems/submit/1" for 127.0.0.1 at 2018-11-05 23:11:33 +0530
+Processing by ProblemsController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VAozBHdd9PrEeraVaFFk8B8wmwTCA6S9P+rIGf9g3O5LtlQjlDr7ht8DMN05uugx9KYmen3HWfbey353UV0t9Q==", "problem"=>{"flag"=>"qwerty123123123"}, "commit"=>"Submit Flag", "id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/problems/1
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-11-05 23:11:33 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-05 23:22:28 +0530
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-05 23:22:38 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uAT+UooVCxP5YQe/vrmp5nOELfRYY3Mb1nqK8ZFMsh48oqSOfezEhF8WJj13omd0vKV9NeqZKxWqNjYRfiugYw==", "session"=>{"email"=>"adwait.gautham@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "adwait.gautham@gmail.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 113ms (Views: 21.7ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-05 23:22:54 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+a15da3UZDzAfwKXrZa7FiB+0wo1ZEw5LYDQTsPXa1TmER5STrNrQNsGhN/8fTfXy+hudIqgsXLMoWYgbeqaTw==", "session"=>{"email"=>"adwait.gautham@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "adwait.gautham@gmail.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 97ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-06 11:06:50 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 567ms (Views: 559.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2018-11-06 11:06:54 +0530
+Processing by ProblemsController#index as HTML
+  Rendering problems/index.html.erb within layouts/application
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 79ms (Views: 43.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-11-06 11:06:59 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 79ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/problems/submit/1" for 127.0.0.1 at 2018-11-06 11:07:04 +0530
+Processing by ProblemsController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"usBe7y8RtbDLXEJjglU0UjV/NUpHpmu2B7Afq7an/WEB/iMj25lVAUCtS9NWodU3TwiykfqPKn2mJIUbmSVu7g==", "problem"=>{"flag"=>"qwerty1234"}, "commit"=>"Submit Flag", "id"=>"1"}
+  [1m[36mProblem Load (0.3ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (undefined local variable or method `x' for #<ProblemsController:0x007f1014066528>):
+  
+app/controllers/problems_controller.rb:69:in `submit'
+Started POST "/problems/submit/1" for 127.0.0.1 at 2018-11-06 11:07:21 +0530
+Processing by ProblemsController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"usBe7y8RtbDLXEJjglU0UjV/NUpHpmu2B7Afq7an/WEB/iMj25lVAUCtS9NWodU3TwiykfqPKn2mJIUbmSVu7g==", "problem"=>{"flag"=>"qwerty1234"}, "commit"=>"Submit Flag", "id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "problems" SET "total_submissions" = ?, "updated_at" = ? WHERE "problems"."id" = ?[0m  [["total_submissions", 1], ["updated_at", "2018-11-06 05:37:21.433316"], ["id", 1]]
+  [1m[35m (84.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/problems/1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "problems" SET "successful_submissions" = ?, "updated_at" = ? WHERE "problems"."id" = ?[0m  [["successful_submissions", 1], ["updated_at", "2018-11-06 05:37:21.523884"], ["id", 1]]
+  [1m[35m (53.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 302 Found in 167ms (ActiveRecord: 140.7ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-11-06 11:07:21 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/problems/submit/1" for 127.0.0.1 at 2018-11-06 11:08:03 +0530
+Processing by ProblemsController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QnxEntMBY0USOWomfhP7yaiyN0UzA5T0emPWnuExr8hdwCO5MGZsOQlA7G4v+HcIQySKO4zHab+bQmDwTwxe0w==", "problem"=>{"flag"=>"qwerty1234"}, "commit"=>"Submit Flag", "id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "problems" SET "total_submissions" = ?, "updated_at" = ? WHERE "problems"."id" = ?[0m  [["total_submissions", 2], ["updated_at", "2018-11-06 05:38:03.044659"], ["id", 1]]
+  [1m[35m (67.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/problems/1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "problems" SET "successful_submissions" = ?, "updated_at" = ? WHERE "problems"."id" = ?[0m  [["successful_submissions", 2], ["updated_at", "2018-11-06 05:38:03.117490"], ["id", 1]]
+  [1m[35m (56.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 302 Found in 135ms (ActiveRecord: 125.5ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-11-06 11:08:03 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.3ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/problems/submit/1" for 127.0.0.1 at 2018-11-06 11:08:12 +0530
+Processing by ProblemsController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZCQBJKm9Sh46nBaHdejqsbRV3Vhyx2jbUKyUE5aAgmx7mGYDStpFYiHlkM8kA2ZwX8NgJs0DlZCxjSJ9OL1zdw==", "problem"=>{"flag"=>"qwerty238rhh2oiehr"}, "commit"=>"Submit Flag", "id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "problems" SET "total_submissions" = ?, "updated_at" = ? WHERE "problems"."id" = ?[0m  [["total_submissions", 3], ["updated_at", "2018-11-06 05:38:12.260807"], ["id", 1]]
+  [1m[35m (93.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/problems/1
+Completed 302 Found in 99ms (ActiveRecord: 95.0ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2018-11-06 11:08:12 +0530
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering problems/show.html.erb within layouts/application
+  Rendered problems/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
